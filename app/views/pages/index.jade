@@ -15,9 +15,9 @@ block content
                   .thumbnail
                     a(href="/movie/#{item._id}")
                       if item.poster.indexOf('http:') > -1
-                        img(src="#{item.poster}", alt="#{item.title}")
+                        img(src="#{item.poster}", alt="#{item.title}",style="width:100%;height:200px")
                       else
-                        img(src="/upload/#{item.poster}", alt="#{item.title}")
+                        img(src="/upload/#{item.poster}", alt="#{item.title}",style="width:100%;height:200px")
                     .caption
                       h4 #{item.title}
                       p: a.btn.btn-primary(href="/movie/#{item._id}", role="button") 观看预告片
