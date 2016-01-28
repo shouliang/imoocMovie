@@ -2,9 +2,11 @@
   .row
     .page-header.clearfix
       .col-md-11
+        h1= title
       .col-md-1
-        a.navbar-brand(href="/admin/movie/list") 管理
-      h1= title
+        a.navbar-link(href="/admin/movie/list") 列表
+        span &nbsp;|&nbsp;
+        a.navbar-link(href="/admin/movie/new") 录入
       .col-md-4
         small 重度科幻迷
       .col-md-8
